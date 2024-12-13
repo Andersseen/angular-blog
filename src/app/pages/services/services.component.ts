@@ -1,12 +1,9 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-services',
+  selector: "app-services",
   standalone: true,
   imports: [],
-  templateUrl: './services.component.html',
-  styleUrl: './services.component.css'
+  templateUrl: "./services.component.html",
 })
-export class ServicesComponent {
-
-}
+export default class ServicesComponent {}
