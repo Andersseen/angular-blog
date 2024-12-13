@@ -5,93 +5,170 @@ import { Component } from "@angular/core";
   standalone: true,
   imports: [],
   template: `
-    <section class="py-20 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Our Features
+    <section class="py-20 bg-neutral-100 relative">
+      <div class="w-full absolute top-0 left-0 overflow-hidden leading-none">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill fill-neutral-900"
+          ></path>
+        </svg>
+      </div>
+      <!-- Features -->
+      <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <!-- Title -->
+        <div class="mx-auto max-w-2xl mb-8 lg:mb-14 text-center">
+          <h2
+            class="text-3xl lg:text-4xl text-gray-800 font-bold dark:text-neutral-900"
+          >
+            Explore tools
           </h2>
-          <p class="mt-4 text-xl text-gray-600">
-            Everything you need to succeed in the digital world
+          <p class="mt-3 text-gray-800 dark:text-neutral-900">
+            The powerful and flexible theme for all kinds of businesses.
           </p>
         </div>
+        <!-- End Title -->
 
-        <div class="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <div
-            class="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg"
-          >
-            <div class="p-3 bg-primary rounded-full">
-              <svg
-                class="w-6 h-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+        <!-- Grid -->
+        <div class="mx-auto max-w-3xl grid grid-cols-12 gap-6 lg:gap-8">
+          <!-- Icon Block -->
+          <div class="col-span-6 sm:col-span-4 text-center">
+            <svg
+              class="mx-auto h-auto w-7 md:w-9 text-gray-800 dark:text-neutral-900"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect width="10" height="14" x="3" y="8" rx="2" />
+              <path
+                d="M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4"
+              />
+              <path d="M8 18h.01" />
+            </svg>
+            <div class="mt-2 sm:mt-6">
+              <h3
+                class="text-lg font-semibold text-gray-800 dark:text-neutral-900"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M13 10V3L4 14h7v7l9-11h-7z"
-                />
-              </svg>
+                Responsive
+              </h3>
             </div>
-            <h3 class="mt-4 text-xl font-medium text-gray-900">
-              Lightning Fast
-            </h3>
-            <p class="mt-2 text-center text-gray-600">
-              Optimized for speed and performance
-            </p>
           </div>
+          <!-- End Icon Block -->
 
-          <div
-            class="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg"
-          >
-            <div class="p-3 bg-primary rounded-full">
-              <svg
-                class="w-6 h-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+          <!-- Icon Block -->
+          <div class="col-span-6 sm:col-span-4 text-center">
+            <svg
+              class="mx-auto h-auto w-7 md:w-9 text-gray-800 dark:text-neutral-900"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20 7h-9" />
+              <path d="M14 17H5" />
+              <circle cx="17" cy="17" r="3" />
+              <circle cx="7" cy="7" r="3" />
+            </svg>
+            <div class="mt-2 sm:mt-6">
+              <h3
+                class="text-lg font-semibold text-gray-800 dark:text-neutral-900"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                />
-              </svg>
+                Customizable
+              </h3>
             </div>
-            <h3 class="mt-4 text-xl font-medium text-gray-900">Secure</h3>
-            <p class="mt-2 text-center text-gray-600">
-              Enterprise-grade security built-in
-            </p>
           </div>
+          <!-- End Icon Block -->
 
-          <div
-            class="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg"
-          >
-            <div class="p-3 bg-primary rounded-full">
-              <svg
-                class="w-6 h-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+          <!-- Icon Block -->
+          <div class="col-span-6 col-start-4 sm:col-span-4 text-center">
+            <svg
+              class="mx-auto h-auto w-7 md:w-9 text-gray-800 dark:text-neutral-900"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z"
+              />
+              <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" />
+            </svg>
+            <div class="mt-2 sm:mt-6">
+              <h3
+                class="text-lg font-semibold text-gray-800 dark:text-neutral-900"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
-                />
-              </svg>
+                24/7 Support
+              </h3>
             </div>
-            <h3 class="mt-4 text-xl font-medium text-gray-900">Flexible</h3>
-            <p class="mt-2 text-center text-gray-600">
-              Adaptable to your needs
-            </p>
           </div>
+          <!-- End Icon Block -->
         </div>
+        <!-- End Grid -->
+
+        <!-- Grid -->
+        <div
+          class="mt-20 grid grid-cols-12 items-center gap-x-2 sm:gap-x-6 lg:gap-x-8"
+        >
+          <div class="hidden md:block col-span-4 md:col-span-3">
+            <img
+              class="rounded-xl"
+              src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80"
+              alt="Features Image"
+            />
+          </div>
+          <!-- End Col -->
+
+          <div class="col-span-4 md:col-span-3">
+            <img
+              class="rounded-xl"
+              src="https://images.unsplash.com/photo-1587613991119-fbbe8e90531d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80"
+              alt="Features Image"
+            />
+          </div>
+          <!-- End Col -->
+
+          <div class="col-span-4 md:col-span-3">
+            <img
+              class="rounded-xl"
+              src="https://images.unsplash.com/photo-1554295405-abb8fd54f153?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80"
+              alt="Features Image"
+            />
+          </div>
+          <!-- End Col -->
+
+          <div class="col-span-4 md:col-span-3">
+            <img
+              class="rounded-xl"
+              src="https://images.unsplash.com/photo-1640622300473-977435c38c04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80"
+              alt="Features Image"
+            />
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Grid -->
       </div>
+      <!-- End Features -->
     </section>
   `,
 })
