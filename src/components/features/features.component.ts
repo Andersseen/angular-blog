@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
   selector: "app-features",
@@ -130,41 +130,11 @@ import { Component } from "@angular/core";
         <div
           class="mt-20 grid grid-cols-12 items-center gap-x-2 sm:gap-x-6 lg:gap-x-8"
         >
-          <div class="hidden md:block col-span-4 md:col-span-3">
-            <img
-              class="rounded-xl"
-              src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80"
-              alt="Features Image"
-            />
-          </div>
-          <!-- End Col -->
-
           <div class="col-span-4 md:col-span-3">
-            <img
-              class="rounded-xl"
-              src="https://images.unsplash.com/photo-1587613991119-fbbe8e90531d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80"
-              alt="Features Image"
-            />
+            @for (item of images; track $index) {
+            <img class="rounded-xl" [src]="item" alt="Features Image" />
+            }
           </div>
-          <!-- End Col -->
-
-          <div class="col-span-4 md:col-span-3">
-            <img
-              class="rounded-xl"
-              src="https://images.unsplash.com/photo-1554295405-abb8fd54f153?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80"
-              alt="Features Image"
-            />
-          </div>
-          <!-- End Col -->
-
-          <div class="col-span-4 md:col-span-3">
-            <img
-              class="rounded-xl"
-              src="https://images.unsplash.com/photo-1640622300473-977435c38c04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80"
-              alt="Features Image"
-            />
-          </div>
-          <!-- End Col -->
         </div>
         <!-- End Grid -->
       </div>
@@ -172,4 +142,40 @@ import { Component } from "@angular/core";
     </section>
   `,
 })
-export class FeaturesComponent {}
+export class FeaturesComponent {
+  @Input() images: string[] = [];
+}
+// <div class="hidden md:block col-span-4 md:col-span-3">
+// <img
+//   class="rounded-xl"
+//   src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80"
+//   alt="Features Image"
+// />
+// </div>
+// <!-- End Col -->
+
+// <div class="col-span-4 md:col-span-3">
+// <img
+//   class="rounded-xl"
+//   src="https://images.unsplash.com/photo-1587613991119-fbbe8e90531d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80"
+//   alt="Features Image"
+// />
+// </div>
+// <!-- End Col -->
+
+// <div class="col-span-4 md:col-span-3">
+// <img
+//   class="rounded-xl"
+//   src="https://images.unsplash.com/photo-1554295405-abb8fd54f153?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80"
+//   alt="Features Image"
+// />
+// </div>
+// <!-- End Col -->
+
+// <div class="col-span-4 md:col-span-3">
+// <img
+//   class="rounded-xl"
+//   src="https://images.unsplash.com/photo-1640622300473-977435c38c04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80"
+//   alt="Features Image"
+// />
+// </div>
